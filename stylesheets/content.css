@@ -136,7 +136,7 @@ html, body{
     align-items: center;
     flex: 1 0 0;
     align-self: stretch;
-    background-image: url( "/images/chess-holder.svg" );
+    background-image: url( "../images/chess-holder.svg" );
     background-color: rebeccapurple;
     background-repeat: repeat;
 }
@@ -183,7 +183,7 @@ html, body{
     align-items: flex-end;
     flex: 1 0 0;
     align-self: stretch;
-    background-image: url("/images/mayak.svg");
+    background-image: url("../images/mayak.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -251,7 +251,7 @@ html, body{
     width: 10em;
     height: 10em;
     align-items: center;
-    background-image: url("/images/tecno.svg");
+    background-image: url("../images/tecno.svg");
     background-color:red;
     background-size: cover;
 }
@@ -347,7 +347,7 @@ html, body{
     align-items: center;
     flex: 1 0 0;
     align-self: stretch;
-    background-image: url("/images/cd.svg");
+    background-image: url("../images/cd.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -373,7 +373,7 @@ html, body{
     gap: 10px;
     flex: 1 0 0;
     align-self: stretch;     
-    background-image: url("/images/illustationdjdeck.svg");           
+    background-image: url("../images/illustationdjdeck.svg");           
 }
 .tilda{
     text-align: center;
@@ -391,7 +391,7 @@ html, body{
     align-items: center;
     flex: 1 0 0;
     align-self: stretch;
-    background-image: url("/images/curves.svg");
+    background-image: url("../images/curves.svg");
     background-size: cover;
 }
 .desc{
