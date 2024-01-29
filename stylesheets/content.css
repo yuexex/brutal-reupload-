@@ -391,7 +391,7 @@ html, body{
     align-items: center;
     flex: 1 0 0;
     align-self: stretch;
-    background-image: url("../images/curves.svg");
+    background-image: url("/images/curves.svg");
     background-size: cover;
 }
 .desc{
@@ -426,7 +426,14 @@ html, body{
     font-family: 'Bold';
 }
 .paragraph-3{
-
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border: 1px solid #000;
+    font-family: 'Bold';
 }
 /*page2 END*/
 
@@ -522,3 +529,14 @@ html, body{
 
 
 /*bottom END*/
+/**/
+.synth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-image: url("../images/synth.svg");
+    background-size: cover;
+}
