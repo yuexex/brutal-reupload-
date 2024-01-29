@@ -6,12 +6,12 @@
 /*FONT LOAD START*/
 @font-face {
   font-family: "Black";
-  src: url("../fonts/BrutalType-Black.ttf") format("truetype");
+  src: url("/fonts/BrutalType-Black.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Extra Bold";
-    src: url("../fonts/BrutalType-ExtraBold.ttf") format("truetype");
+    src: url("/fonts/BrutalType-ExtraBold.ttf") format("truetype");
   }
 
 @font-face {
