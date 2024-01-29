@@ -1,0 +1,524 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+/*FONT LOAD START*/
+@font-face {
+  font-family: "Black";
+  src: url("../fonts/BrutalType-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Extra Bold";
+    src: url("../fonts/BrutalType-ExtraBold.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Bold";
+    src: url("../fonts/BrutalType-Bold.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Medium";
+    src: url("../fonts/BrutalType-Medium.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Regular";
+    src: url("../fonts/BrutalType.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Light";
+    src: url("../fonts/BrutalType-Light.ttf") format("truetype");
+  }
+@font-face {
+    font-family: " ";
+    src: url("../fonts/BrutalType-ExtraLight.ttf") format("truetype");
+  }
+@font-face {
+    font-family: "Thin";
+    src: url("../fonts/BrutalType-Thin.ttf") format("truetype");
+  }
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Regular';
+    font-size: 62.5%;
+}
+/*FONT LOAD END*/
+
+.rotate-90{
+    transform: rotate(-90deg);
+}
+.rotate-180{
+    transform: rotate(180deg);
+}
+.vertical{
+    writing-mode: vertical-lr;
+}
+/*pages START*/
+.page{
+    display: flex;
+    /*height: 100dvh;*/
+    padding: 0em 2em 0em 2em;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.box-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+#first{
+    padding: 2em 2em 0em 2em;
+}
+/*pages END*/
+
+/*timeline START*/
+.timeline-wrapper{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    align-items: stretch;
+}
+.timeline{
+    display: flex;
+    width: 360px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+/*timeline END*/
+.lines{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+#red{
+    border: 0.1em solid #F00;
+}
+
+.line-item{
+    display: flex;
+    padding: 0.25em;
+    align-items: flex-start;
+    font-size: 4em;
+    text-align: center;
+    vertical-align: center;
+    border: 0.1em solid #000;
+    
+}
+.line-div{
+    width: 0.05em;
+    flex: 1 0 0;
+    border: 0.1em solid #000;
+}
+/*middle START*/
+.middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.chess-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-image: url( "/images/chess-holder.svg" );
+    background-color: rebeccapurple;
+    background-repeat: repeat;
+}
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    align-self: stretch;
+}
+.side-text{
+    writing-mode: vertical-lr;
+    text-align: left;
+    font-family: "Bold";
+    font-size: 6em;
+    font-style: normal;
+    line-height: 1em; /* 100% */
+    -webkit-text-stroke-width: 0.11em;
+    -webkit-text-stroke-color: #000000;
+}
+
+.circles{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.circle{
+    width: 10em;
+    height: 10em;
+    border-radius: 10em;
+    background: conic-gradient(from 180deg at 50% 50%, #000 0deg, #FFF 360deg);    
+}
+/*middle END*/
+
+/*right-box1 START*/
+.right-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-image: url("/images/mayak.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  
+}
+.small-poem{
+    color: #000;
+    text-align: right;
+    -webkit-text-stroke-width: 0.25em;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "Brutal Type";
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 100% */
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    -webkit-text-stroke-width: 0.25em;
+    -webkit-text-stroke-color: #F00;
+    font-family: "Black";
+    font-size: 3em;
+}
+.brutal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+.brutal-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 0em 4em;
+}
+.letter{
+    transform: rotate(-45deg);
+    color: #FFF;
+    text-align: center;
+    -webkit-text-stroke-width: 0.1em;
+    -webkit-text-stroke-color: #F00;
+    font-family: "Brutal Type";
+    font-size: 12em;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+/*right-box1 END*/
+
+/*page2 START*/
+.circle-illustration{
+    display: flex;
+    width: 10em;
+    height: 10em;
+    align-items: center;
+    background-image: url("/images/tecno.svg");
+    background-color:red;
+    background-size: cover;
+}
+#A{
+    writing-mode: vertical-rl;
+    border: 0em solid rgba(0, 0, 0, 0);
+    font-size: 12em;
+    font-family: 'Light';
+}
+.right-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.top-left{
+    display: flex;
+    align-items: center;
+    flex: 2 0 0;
+    align-self: stretch;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.stacked-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.card-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.column-hard{
+    color: #000;
+    font-family: "Brutal Type";
+    font-size: 6em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 6em; /* 106.667% */
+}
+
+.column-vert{
+    color: #000;
+    font-family: "Brutal Type";
+    font-size: 4em;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 20px; /* 100% */
+}
+
+/*----------------------------------------------*/
+.top-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.card-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.illustration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-image: url("/images/cd.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.illustration-headder{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+.illustation-dj-deck{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;     
+    background-image: url("/images/illustationdjdeck.svg");           
+}
+.tilda{
+    text-align: center;
+    -webkit-text-stroke-width: 0.25em;
+    -webkit-text-stroke-color: #000;
+    font-family: "Brutal Type";
+    font-size: 12em;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 128px; /* 100% */
+}
+.illustration-qube{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-image: url("/images/curves.svg");
+    background-size: cover;
+}
+.desc{
+    display: flex;
+    text-align: center;
+    font-size: 4em;
+}
+
+.middle-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    font-family: 'Regular';
+    font-size: 1rem;
+}
+.paragraph-1{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    align-self: stretch;
+}
+.paragraph-2{
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border: 1px solid #000;
+    font-family: 'Bold';
+}
+.paragraph-3{
+
+}
+/*page2 END*/
+
+/*bottom START*/
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1 0 0;
+    align-self: stretch;
+    /*font-size:1em;*/
+}
+.bottom-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.stretch-text-1{
+    display: flex;
+    font-size: 3em;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    border:0.1em #000;
+    
+}
+
+.stretch-text-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border:0.1em #000;
+}
+
+.bottom-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.text-box{
+    display: flex;
+    
+    align-items: flex-start;
+    border: 0.1em solid #000;
+    background: #FFF;
+    text-decoration-line: strikethrough;
+    font-size: 3em;
+}
+
+.DIN{
+    display: flex;
+    padding: 0px 2em;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    padding: 3em 0em;
+}
+
+.din-letter{
+    display: flex;
+    width: 3em;
+    height: 3em;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3em;
+    border: 0.1em solid #000;
+    font-size: 3em;
+    
+}
+.designed-by{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1 0 0;
+    align-self: stretch;
+    text-align: center;
+}
+
+
+
+/*bottom END*/
